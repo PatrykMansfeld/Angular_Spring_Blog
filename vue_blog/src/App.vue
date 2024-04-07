@@ -1,9 +1,9 @@
 <script setup>
-import WelcomePage from './components/WelcomePage/WelcomePage.vue'
+import Navigation from './components/WelcomePage/Navigation/Navigation.vue'
 </script>
 
 <template>
-  <WelcomePage />
+  <Navigation />
 </template>
 
 <style scoped>
