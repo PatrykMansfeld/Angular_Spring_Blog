@@ -4,7 +4,6 @@ import Navigation from './Navigation/Navigation.vue';
 
 <template>
     <div class="welcomePage_Component">
-        <Navigation />
         <h1>Welcome to The.Blog</h1>
     </div>
 </template>
