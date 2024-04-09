@@ -15,6 +15,9 @@ nav {
     background-color: #333;
     color: white;
     padding: 10px;
+    -webkit-box-shadow: 0px 10px 25px 5px rgb(255, 255, 255);
+    -moz-box-shadow: 0px 10px 25px 5px rgb(255, 255, 255);
+    box-shadow: 0px 10px 25px 5px rgb(255, 255, 255);
 }
 
 .nav-list {

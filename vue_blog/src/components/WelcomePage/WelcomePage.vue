@@ -1,10 +1,9 @@
-<script>
-</script>
-
 <template>
     <div class="welcomePage_Component">
         <h1>Welcome to The.Blog</h1>
-        <div class="wave"></div>
+        <div class="text-animation">
+            <span class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam autem rerum velit repellat earum repellendus, modi perspiciatis! Tempora sint ad facilis debitis consequatur ab omnis aspernatur necessitatibus! At, possimus.</span>
+        </div>
     </div>
 </template>
 
@@ -16,25 +15,27 @@
     justify-content: center;
 }
 
-@keyframes wave-animation {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    50% {
-        transform: rotate(30deg);
-    }
-
-    100% {
-        transform: rotate(0deg);
-    }
+.text-animation {
+    position: relative;
+    overflow: hidden;
 }
 
-.wave {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: blue;
-    animation: wave-animation 2s infinite;
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    white-space: nowrap;
+    animation: typing 4s steps(20) infinite;
+    color: white;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
 }
 </style>
